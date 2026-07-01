@@ -1,5 +1,5 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# DevOps Foundations: Core Principles and Real‑World Practices for Modern Software Delivery
+This is the repository for the LinkedIn Learning course `DevOps Foundations: Core Principles and Real‑World Practices for Modern Software Delivery`. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![course-name-alt-text][lil-thumbnail-url] 
 
