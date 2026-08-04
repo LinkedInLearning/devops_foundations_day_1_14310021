@@ -1,4 +1,14 @@
-.DS_Store
+# Node.js
 node_modules
-.tmp
 npm-debug.log
+
+# IntelliJ
+*.iml
+.idea
+
+# macOS
+.DS_Store
+.tmp
+
+# Lambda deployment packages
+*.zip
