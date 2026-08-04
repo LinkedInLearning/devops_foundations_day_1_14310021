@@ -1,6 +1,6 @@
 {
   "name": "DevOps Foundations",
-  "image": "ghcr.io/brikis98/devops-foundations-day-1-codespaces:v4",
+  "image": "ghcr.io/brikis98/devops-foundations-day-1-codespaces:v1",
   "hostRequirements": {
     "cpus": 2,
     "memory": "8gb",
