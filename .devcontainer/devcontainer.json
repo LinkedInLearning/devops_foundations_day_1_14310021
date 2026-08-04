@@ -13,7 +13,7 @@
     "AWS_PAGER": "",
     "K3D_CLUSTER_NAME": "devops-foundations",
     "KUBECONFIG": "/home/vscode/.kube/config",
-    "MISE_TRUSTED_CONFIG_PATHS": "/workspaces"
+    "MISE_TRUSTED_CONFIG_PATHS": "/"
   },
   "forwardPorts": [80, 8080],
   "portsAttributes": {
