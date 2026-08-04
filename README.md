@@ -92,9 +92,8 @@ Codespaces in this repo runs on top of a Docker image built from the [`Dockerfil
 folder](/.devcontainer/Dockerfile). The Docker image lives in GitHub Packages. To push a new image:
 
 1. (One time) Create a Classic GitHub Personal Access Token (PAT) with `packages:read` and `packages:write` scopes.
-2. Set the PAT as an environment variable: `export GITHUB_PACKAGES_TOKEN=(PAT)`.
-3. Login to GitHub Packages: `echo "$GITHUB_PACKAGES_TOKEN" | docker login ghcr.io -u brikis98 --password-stdin`.
-4. Build and push the Docker image (run this command from the root of the repo so files such as `.mise.toml` are
+2. Login to GitHub Packages: `echo "<GITHUB_PAT>" | docker login ghcr.io -u brikis98 --password-stdin`.
+3. Build and push the Docker image (run this command from the root of the repo so files such as `.mise.toml` are
    available in the build context):
 
     ```shell
