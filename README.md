@@ -14,8 +14,8 @@ For all labs in this course, you can choose from one of the two following option
    anything locally. To use codespaces:
 
     1. Click the green Code button in the top right of the repo.
-    2. Select "Create codespace on main."
-    3. Give the Codespace a minute or two to boot up.
+    2. Select the Codespaces tab.
+    3. Click the "Create codespace on main" button.
 
 2. **Your own computer**. Alternatively, you can install and run everything from your own computer. Note that the
    scripts and commands in this course assume you’re on Linux or macOS; if you’re on Windows, you’ll need to use the
