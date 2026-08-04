@@ -44,6 +44,68 @@ For example, for the lab in chapter 1, section 2:
 
 <!-- TODO: fill in these URLs -->
 
+## Running a Kubernetes cluster locally
+
+- **If you're running these labs on your own computer**, [install Docker
+  Desktop](https://www.docker.com/products/docker-desktop/), and use its built-in Kubernetes cluster.
+
+- **If you're running these labs in Codespaces**, run `.devcontainer/start-k3d-cluster.sh` to create or start a local
+  Kubernetes cluster powered by [K3D](https://k3d.io/stable/). This script will create a cluster named
+  `devops-foundations` and automatically switch you to its Kubernetes context, whcih is called `k3d-devops-foundations`.
+
+## AWS SSO in Codespaces
+
+To authenticate to AWS on the CLI in Codespaces, use the device-code login flow. The very first time, run the
+following:
+
+```shell
+aws configure sso --use-device-code
+```
+
+This will prompt you for:
+
+1. A name for the SSO session
+2. The SSO start URL (e.g., `https://x-xxxxxxxxx.awsapps.com/start`)
+3. The AWS region (e.g., `us-east-2`)
+4. The SSO registration scopes (e.g., `sso:account:access`)
+
+It will then prompt you to open a new browser tab (allow this) to login to your AWS account. Once you've logged in, go
+back to the terminal in Codespaces, and pick the AWS IAM Role you want to use, and give a name to that profile. You can
+then use that profile to authenticate to AWS by setting the `AWS_PROFILE` environment variable. For example, try
+running:
+
+```shell
+AWS_PROFILE=<PROFILE_NAME> aws sts get-caller-identity
+```
+
+After that, if your login expired, you can login again as follows:
+
+```bash
+aws sso login --sso-session <SESSION_NAME> --use-device-code
+```
+
+Set `<SESSION_NAME>` to whatever name you used when running `aws configure sso` the very first time.
+
+## Codespaces Docker image
+
+Codespaces in this repo runs on top of a Docker image built from the [`Dockerfile` in the `.devcontainer`
+folder](/.devcontainer/Dockerfile). The Docker image lives in GitHub Packages. To push a new image:
+
+1. (One time) Create a Classic GitHub Personal Access Token (PAT) with `packages:read` and `packages:write` scopes.
+2. Set the PAT as an environment variable: `export GITHUB_PACKAGES_TOKEN=(PAT)`.
+3. Login to GitHub Packages: `echo "$GITHUB_PACKAGES_TOKEN" | docker login ghcr.io -u brikis98 --password-stdin`.
+4. Build and push the Docker image (run this command from the root of the repo so files such as `.mise.toml` are
+   available in the build context):
+
+    ```shell
+    docker buildx build \
+      -f .devcontainer/Dockerfile \
+      --platform linux/amd64,linux/arm64 \
+      -t ghcr.io/brikis98/devops-foundations-codespaces:<VERSION> \
+      --push \
+      .
+    ```
+
 [lil-course-url]: https://www.linkedin.com/learning/
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
 
