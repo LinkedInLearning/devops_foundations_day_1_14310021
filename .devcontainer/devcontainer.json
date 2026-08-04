@@ -1,4 +1,31 @@
 {
+  "name": "DevOps Foundations",
+  "image": "ghcr.io/brikis98/devops-foundations-day-1-codespaces:v4",
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "8gb",
+    "storage": "16gb"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  },
+  "containerEnv": {
+    "AWS_PAGER": "",
+    "K3D_CLUSTER_NAME": "devops-foundations",
+    "KUBECONFIG": "/home/vscode/.kube/config",
+    "MISE_TRUSTED_CONFIG_PATHS": "/workspaces"
+  },
+  "forwardPorts": [80, 8080],
+  "portsAttributes": {
+    "80": {
+      "label": "k3d ingress http",
+      "onAutoForward": "notify"
+    },
+    "8080": {
+      "label": "vervium-cloud-ai",
+      "onAutoForward": "notify"
+    }
+  },
   "customizations": {
     "codespaces": {
       "openFiles": [
@@ -12,13 +39,13 @@
       },
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        "linkedinlearning.linkedinlearning-vscode-theme"
+        "linkedinlearning.linkedinlearning-vscode-theme",
+        "ms-azuretools.vscode-docker",
+        "ms-kubernetes-tools.vscode-kubernetes-tools"
       ]
     }
   },
   // Update welcome text and set terminal prompt to '$ '
-  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
-  // Pull all branches
-  "postAttachCommand": "git pull --all"
+  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc"
 }
 // DevContainer Reference: https://code.visualstudio.com/docs/remote/devcontainerjson-reference
