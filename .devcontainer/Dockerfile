@@ -28,3 +28,5 @@ RUN mkdir -p "${MISE_DATA_DIR}" && \
 
 # Separately, install K3D. It's not in .mise.toml as it's only need for Codespaces. \
 RUN mise install k3d@5.8.3
+
+LABEL org.opencontainers.image.source https://github.com/LinkedInLearning/devops-foundations-core-principles-and-real-world-practices-for-modern-software-delivery-7773006
