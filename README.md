@@ -49,7 +49,7 @@ For example, for the lab in chapter 1, section 2:
 - **If you're running these labs on your own computer**, [install Docker
   Desktop](https://www.docker.com/products/docker-desktop/), and use its built-in Kubernetes cluster.
 
-- **If you're running these labs in Codespaces**, run `.devcontainer/start-k3d-cluster.sh` to create or start a local
+- **If you're running these labs in Codespaces**, run `./.devcontainer/start-k3d-cluster.sh` to create or start a local
   Kubernetes cluster powered by [K3D](https://k3d.io/stable/). This script will create a cluster named
   `devops-foundations` and automatically switch you to its Kubernetes context, whcih is called `k3d-devops-foundations`.
 
