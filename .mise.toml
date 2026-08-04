@@ -1,0 +1,10 @@
+# Pins tool versions for local development and CI. Install mise: https://mise.jdx.dev
+# Run `mise install` in the repo root to activate these versions locally.
+[settings]
+lockfile = true
+
+[tools]
+aws-cli = { version = "2.27.41", symlink_bins = true }
+kubectl = "1.33.1"
+node = "25.9.0"
+packer = "1.14.2"
