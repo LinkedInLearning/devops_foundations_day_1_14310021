@@ -28,6 +28,7 @@ For all labs in this course, you can choose from one of the two following option
     4. Use Mise to install the tools for this course:
 
     ```shell
+    cd .devcontainer
     mise trust .mise.toml
     mise install
     ```
@@ -93,8 +94,7 @@ folder](/.devcontainer/Dockerfile). The Docker image lives in GitHub Packages. T
 
 1. (One time) Create a Classic GitHub Personal Access Token (PAT) with `packages:read` and `packages:write` scopes.
 2. Login to GitHub Packages: `echo "<GITHUB_PAT>" | docker login ghcr.io -u brikis98 --password-stdin`.
-3. Build and push the Docker image (run this command from the root of the repo so files such as `.mise.toml` are
-   available in the build context):
+3. Build and push the Docker image:
 
     ```shell
     docker buildx build \
