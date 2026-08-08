@@ -32,7 +32,7 @@ if ! k3d cluster get "$cluster_name" >/dev/null 2>&1; then
     --kubeconfig-update-default \
     --kubeconfig-switch-context \
     --registry-create devops-registry:5001 \
-    --port "80:80@loadbalancer"
+    --port "8080:8080@loadbalancer"
 fi
 
 servers_running=$(k3d cluster list --output json | jq --arg cluster_name "$cluster_name" '.[] | select(.name==$cluster_name) | .serversRunning')
