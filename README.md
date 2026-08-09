@@ -54,39 +54,6 @@ For example, for the lab in chapter 1, section 2:
   Kubernetes cluster powered by [K3D](https://k3d.io/stable/). This script will create a cluster named
   `devops-foundations` and automatically switch you to its Kubernetes context, whcih is called `k3d-devops-foundations`.
 
-## AWS SSO in Codespaces
-
-To authenticate to AWS on the CLI in Codespaces, use the device-code login flow. The very first time, run the
-following:
-
-```shell
-aws configure sso --use-device-code
-```
-
-This will prompt you for:
-
-1. A name for the SSO session
-2. The SSO start URL (e.g., `https://x-xxxxxxxxx.awsapps.com/start`)
-3. The AWS region (e.g., `us-east-2`)
-4. The SSO registration scopes (e.g., `sso:account:access`)
-
-It will then prompt you to open a new browser tab (allow this) to login to your AWS account. Once you've logged in, go
-back to the terminal in Codespaces, and pick the AWS IAM Role you want to use, and give a name to that profile. You can
-then use that profile to authenticate to AWS by setting the `AWS_PROFILE` environment variable. For example, try
-running:
-
-```shell
-AWS_PROFILE=<PROFILE_NAME> aws sts get-caller-identity
-```
-
-After that, if your login expired, you can login again as follows:
-
-```bash
-aws sso login --sso-session <SESSION_NAME> --use-device-code
-```
-
-Set `<SESSION_NAME>` to whatever name you used when running `aws configure sso` the very first time.
-
 ## Codespaces Docker image
 
 Codespaces in this repo runs on top of a Docker image built from the [`Dockerfile` in the `.devcontainer`
