@@ -15,8 +15,7 @@ spec:
       containers:
         - name: app
           # TODO: fill in your AWS region and account ID below!
-          # image: <ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/vervium-cloud-ai:v1
-          image: 168852252849.dkr.ecr.us-east-2.amazonaws.com/vervium-cloud-ai:v1
+          image: <ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/vervium-cloud-ai:v1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
