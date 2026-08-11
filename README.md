@@ -63,7 +63,6 @@ folder](/.devcontainer/Dockerfile). The Docker image lives in GitHub Packages. T
 
     ```shell
     docker buildx build \
-      -f .devcontainer/Dockerfile \
       --platform linux/amd64,linux/arm64 \
       -t ghcr.io/brikis98/devops-foundations-day-1-codespaces:<VERSION> \
       --push \
