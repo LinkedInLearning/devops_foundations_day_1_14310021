@@ -43,8 +43,6 @@ For example, for the lab in chapter 1, section 2:
 - `chapter-01/lab-02/begin`: Do all your coding in this folder.
 - `chapter-01/lab-02/end`: The "official" solution in case you get stuck or want to compare your code.
 
-<!-- TODO: fill in these URLs -->
-
 ## Running a Kubernetes cluster locally
 
 - **If you're running these labs on your own computer**, [install Docker
@@ -71,6 +69,8 @@ folder](/.devcontainer/Dockerfile). The Docker image lives in GitHub Packages. T
       --push \
       .
     ```
+
+<!-- TODO: fill in these URLs -->
 
 [lil-course-url]: https://www.linkedin.com/learning/
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
