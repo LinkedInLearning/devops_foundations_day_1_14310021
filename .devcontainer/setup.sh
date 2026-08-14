@@ -12,4 +12,5 @@ mise trust .mise.toml
 mise install
 
 # Separately, install K3D. It's not in .mise.toml as it's only need for Codespaces
-RUN mise install k3d@5.8.3 && mise use k3d
+mise install k3d@5.8.3
+mise use k3d
