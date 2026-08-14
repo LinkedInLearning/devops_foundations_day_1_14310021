@@ -15,6 +15,7 @@
   "remoteEnv": {
     "PATH": "/home/codespace/.local/bin:/home/codespace/.local/share/mise/shims:${containerEnv:PATH}"
   },
+  "onCreateCommand": ".devcontainer/setup.sh",
   "features": {
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
   },
