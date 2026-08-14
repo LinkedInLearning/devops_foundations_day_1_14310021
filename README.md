@@ -52,23 +52,6 @@ For example, for the lab in chapter 1, section 2:
   Kubernetes cluster powered by [K3D](https://k3d.io/stable/). This script will create a cluster named
   `devops-foundations` and automatically switch you to its Kubernetes context, whcih is called `k3d-devops-foundations`.
 
-## Codespaces Docker image
-
-Codespaces in this repo runs on top of a Docker image built from the [`Dockerfile` in the `.devcontainer`
-folder](/.devcontainer/Dockerfile). The Docker image lives in GitHub Packages. To push a new image:
-
-1. (One time) Create a Classic GitHub Personal Access Token (PAT) with `packages:read` and `packages:write` scopes.
-2. Login to GitHub Packages: `echo "<GITHUB_PAT>" | docker login ghcr.io -u brikis98 --password-stdin`.
-3. Build and push the Docker image:
-
-    ```shell
-    docker buildx build \
-      --platform linux/amd64,linux/arm64 \
-      -t ghcr.io/brikis98/devops-foundations-day-1-codespaces:<VERSION> \
-      --push \
-      .
-    ```
-
 <!-- TODO: fill in these URLs -->
 
 [lil-course-url]: https://www.linkedin.com/learning/
