@@ -52,7 +52,11 @@ build {
       "sudo chown -R app-user:app-user /home/app-user/app",
 
       # As the app-user, install the app's dependencies
-      "sudo -u app-user -H bash -lc /home/app-user/app/install-dependencies.sh"
+      "sudo -u app-user -H bash -lc /home/app-user/app/install-dependencies.sh",
+
+      # Use systemd as a process supervisor, configuring the app to start on boot, and restarting it any time it crashes
+      "sudo mv /home/app-user/app/vervium-cloud-ai.service /etc/systemd/system/",
+      "sudo systemctl enable vervium-cloud-ai"
     ]
   }
 }
