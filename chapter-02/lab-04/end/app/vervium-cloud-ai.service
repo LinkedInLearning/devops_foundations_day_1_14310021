@@ -6,6 +6,7 @@ After=network.target
 Type=simple
 User=app-user
 WorkingDirectory=/home/app-user/app
+Environment="NODE_ENV=production"
 ExecStart=/home/app-user/.local/bin/mise exec -- npm start
 Restart=on-failure
 
