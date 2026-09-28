@@ -1,0 +1,9 @@
+{
+  "name": "vervium-cloud-ai",
+  "description": "Vervium Cloud AI. Now with 400% more cloud.",
+  "type": "module",
+  "dependencies": {
+    "ejs": "^5.0.1",
+    "express": "^5.2.1"
+  }
+}
