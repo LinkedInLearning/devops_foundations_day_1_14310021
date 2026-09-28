@@ -3,7 +3,7 @@
   "description": "Vervium Cloud AI. Now with 400% more cloud.",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "ejs": "^5.0.1",
