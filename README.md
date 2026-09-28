@@ -41,15 +41,44 @@ For all labs in this course, you can choose from one of the two following option
     mise install
     ```
 
-## Folder structure
+## Lab solutions and branches
 
-The code to use at the start of a lab will be in a folder named `chapter-xx/lab-yy/begin`. The “official” solution for
-what the code should look like at the end of a lab will be in a folder named `chapter-xx/lab-yy/end`.
+This course consists of a series of labs that build on each other.
 
-For example, for the lab in chapter 1, section 2:
+* **Start in the `main` branch.** The code you start with in the first lab is in the `main` branch. Write all your
+  code in this branch, and push it to your fork of the GitHub repo every time you complete a lab.
 
-- `chapter-01/lab-02/begin`: Do all your coding in this folder.
-- `chapter-01/lab-02/end`: The "official" solution in case you get stuck or want to compare your code.
+* **Use the `chapter-xx/lab-yy` branch to see what the code should look like at the _end_ of a lab.** To see what the
+  code should look like at the _end_ of a lab (e.g., if you're stuck or to check your solution), take a look at
+  the branch with the name `chapter-xx/lab-yy`, where `xx` is the 2-digit chapter number and `yy` is the 2-digit lab
+  number. For example, to see what the code should like like at the end of lab 4 in Chapter 2, take a look at the
+  branch
+  [`chapter-02/lab-04`](https://github.com/LinkedInLearning/devops_foundations_day_1_14310021/tree/chapter-02/lab-04).
+
+* **Use the previous lab's branch to see what the code should look like at the _beginning_ of a lab.** To see what the
+  code should look like at the _beginning_ of a lab (e.g., because you skipped a lab or your code is a bit different),
+  take a look at the branch of the previous lab. The labs all build on each other, so the code at the end of the
+  previous lab is the code you use at the start of the next lab. For example, to see what the code should like like at
+  the beginning of lab 2 in Chapter 2, take a look at the branch
+  [`chapter-02/lab-02`](https://github.com/LinkedInLearning/devops_foundations_day_1_14310021/tree/chapter-02/lab-02).
+
+* **See all the labs.** To see all the labs, you can do one of the following:
+
+    * Open [the branches page](https://github.com/LinkedInLearning/devops_foundations_day_1_14310021/branches/all) in
+      your browser.
+    * Run `git branch -a` in your terminal.
+
+* **See what changed between labs.** If you want to see what changed between two labs, rather than just
+  what the code looks like at the end of a lab, you can do one of the following:
+
+    * [Use GitHub compare](https://github.com/LinkedInLearning/devops_foundations_day_1_14310021/compare/) in your
+      browser. You can use the UI to select the branches to compare, or you can manually format the URL: e.g., use
+      `/compare/<BRANCH_1>...<BRANCH_2>` to compare `BRANCH_1` to `BRANCH_2`. For example, to see the changes between
+      lab 2 and lab 4 of Chapter 2, use the URL
+      [/compare/chapter-02/lab-02...chapter-02/lab-04](https://github.com/LinkedInLearning/devops_foundations_day_1_14310021/compare/chapter-02/lab-02...chapter-02/lab-04).
+
+    * Run `git diff <BRANCH_1> <BRANCH_2>` in your terminal. For example, to see the changes between lab 2 and lab 4 of
+      Chapter 2, run `git diff chapter-02/lab-02 chapter-02/lab-04`.
 
 ## Running a Kubernetes cluster locally
 
