@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vervium-cloud-ai
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: vervium-cloud-ai
+  template:
+    metadata:
+      labels:
+        app: vervium-cloud-ai
+    spec:
+      containers:
+        - name: app
+          image: vervium-cloud-ai:v1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          env:
+            - name: NODE_ENV
+              value: production
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vervium-cloud-ai
+spec:
+  type: LoadBalancer
+  selector:
+    app: vervium-cloud-ai
+  ports:
+    - port: 8080
+      targetPort: 8080
