@@ -7,4 +7,4 @@ This is the Vervium CloudAI app. Now with 400% more cloud.
 1. Install Node.js
 2. Install app dependencies: `npm install`
 3. Run the app: `npm start`
-4. Test the app: http://localhost:8080
+4. Test the app: htp://localhost:8080

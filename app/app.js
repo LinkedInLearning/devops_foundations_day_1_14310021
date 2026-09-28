@@ -1,13 +1,10 @@
-import express from "express";
+import {handler} from "./index.js";
+import http from 'node:http';
 
-const app = express();
-app.set("view engine", "ejs");
-
-app.get("/", (req, res) => {
-  res.render("hello", {metrics: {synergy: "95.4%", powerpoint: "3 min", maturity: "Bronze+"}});
-});
-
-const port = process.env.PORT || 8080;
-app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
-});
+// To support local testing, create a dirt-simple harness that calls the Lambda handler function, and returns an
+// HTTP response with the results. For more robust harnesses, see the Serverless Framework, SAM, and SST.
+http.createServer(async (req, res) => {
+  const result = await handler();
+  res.writeHead(result.statusCode, result.headers);
+  res.end(result.body);
+}).listen(8080);
