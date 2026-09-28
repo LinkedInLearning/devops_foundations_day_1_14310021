@@ -59,7 +59,7 @@ This course consists of a series of labs that build on each other.
   code should look like at the _beginning_ of a lab (e.g., because you skipped a lab or your code is a bit different),
   take a look at the branch of the previous lab. The labs all build on each other, so the code at the end of the
   previous lab is the code you use at the start of the next lab. For example, to see what the code should like like at
-  the beginning of lab 2 in Chapter 2, take a look at the branch
+  the beginning of lab 4 in Chapter 2, take a look at the branch
   [`chapter-02/lab-02`](https://github.com/LinkedInLearning/devops_foundations_day_1_14310021/tree/chapter-02/lab-02).
 
 * **See all the labs.** To see all the labs, you can do one of the following:
