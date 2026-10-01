@@ -10,7 +10,8 @@
     "K3D_CLUSTER_NAME": "devops-foundations",
     "KUBECONFIG": "/home/vscode/.kube/config",
     "MISE_GLOBAL_CONFIG_FILE": "${containerWorkspaceFolder}/.devcontainer/.mise.toml",
-    "MISE_TRUSTED_CONFIG_PATHS": "/"
+    "MISE_TRUSTED_CONFIG_PATHS": "/",
+    "MISE_K3D_VERSION": "5.8.3"
   },
   "remoteEnv": {
     "PATH": "/home/codespace/.local/bin:/home/codespace/.local/share/mise/shims:${containerEnv:PATH}"
