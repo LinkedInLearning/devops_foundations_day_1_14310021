@@ -5,6 +5,19 @@ This is the repository for the LinkedIn Learning course `DevOps Foundations Day 
 
 ![course-name-alt-text][lil-thumbnail-url] 
 
+# Course description
+
+In this hands-on course, instructor Yevgeniy Brikman introduces DevOps as an end-to-end system for modern software delivery, using a realistic BusinessCorp/Vervium CloudAI scenario to connect concepts to practical decisions and workflows. Learners explore deployment options, infrastructure as code, microservices, Kubernetes, CI, CD, GitOps, observability, SRE, data durability, networking, and security practices. Along the way, they practice choosing the right deployment and orchestration approaches, creating safer pipelines, troubleshooting outages, protecting data and secrets, and applying safety principles to improve delivery without increasing risk.
+
+# Learning objectives
+- Explain the core principles and practices that underpin successful DevOps organizations.
+- Choose the right deployment, infrastructure, and orchestration approaches for modern cloud applications.
+- Build and manage infrastructure using Infrastructure as Code and automation tools.
+- Create CI/CD and GitOps workflows that enable safer and more frequent software releases.
+- Use observability and incident response practices to identify, diagnose, and resolve production issues.
+- Apply reliability, networking, data durability, and security principles to build resilient production systems.
+- Evaluate emerging DevOps considerations, including GenAI productivity, safety, and risk management.
+
 ## Getting started
 
 For all labs in this course, you can choose from one of the two following options:
@@ -91,6 +104,5 @@ This course consists of a series of labs that build on each other.
 
 <!-- TODO: fill in these URLs -->
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
-
+[lil-course-url]: https://www.linkedin.com/learning/devops-foundations-day-1-deploy-and-ship-software/what-you-ll-be-building-in-this-course?u=104
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D560DAQEDE760mbefpw/learning-public-crop_675_1200/B56aDacP8UIEAY-/0/1790371234203?e=2147483647&v=beta&t=QtF4Zy4Lw38bAoY-mjKuYJXz1jfdDx0q7vb7qbzfwPY
