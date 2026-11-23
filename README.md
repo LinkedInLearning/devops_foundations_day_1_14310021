@@ -5,7 +5,7 @@ This is the repository for the LinkedIn Learning course `DevOps Foundations Day 
 
 ![course-name-alt-text][lil-thumbnail-url] 
 
-# Course description
+## Course description
 
 In this hands-on course, instructor Yevgeniy Brikman introduces DevOps as an end-to-end system for modern software delivery, using a realistic BusinessCorp/Vervium CloudAI scenario to connect concepts to practical decisions and workflows. Learners explore deployment options, infrastructure as code, microservices, Kubernetes, CI, CD, GitOps, observability, SRE, data durability, networking, and security practices. Along the way, they practice choosing the right deployment and orchestration approaches, creating safer pipelines, troubleshooting outages, protecting data and secrets, and applying safety principles to improve delivery without increasing risk.
 
