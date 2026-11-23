@@ -103,6 +103,10 @@ This course consists of a series of labs that build on each other.
   `devops-foundations` and automatically switch you to its Kubernetes context, whcih is called `k3d-devops-foundations`.
 
 <!-- TODO: fill in these URLs -->
+# Instructor
+Yevgeniy (Jim) Brikman - Engineering and Computer Science Expert | Co-founder of Gruntwork | Author
+
+<p>Yevgeniy (Jim) Brikman is an computer science and engineering expert. </p><p> Jim has 20+ years of experience as a software engineer, building infrastructure and products with LinkedIn, TripAdvisor, Cisco Systems, and Thomson Financial. He is the co-founder of Gruntwork, a company that that offers products and services for setting up world-class DevOps foundations. He's also the author of three books published by O'Reilly Media: <i>Fundamentals of DevOps and Software Delivery</i>, <i>Terraform: Up & Running</i>, and <i>Hello, Startup</i>.
 
 [lil-course-url]: https://www.linkedin.com/learning/devops-foundations-day-1-deploy-and-ship-software/what-you-ll-be-building-in-this-course?u=104
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D560DAQEDE760mbefpw/learning-public-crop_675_1200/B56aDacP8UIEAY-/0/1790371234203?e=2147483647&v=beta&t=QtF4Zy4Lw38bAoY-mjKuYJXz1jfdDx0q7vb7qbzfwPY
