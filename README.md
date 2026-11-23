@@ -9,7 +9,7 @@ This is the repository for the LinkedIn Learning course `DevOps Foundations Day 
 
 In this hands-on course, instructor Yevgeniy Brikman introduces DevOps as an end-to-end system for modern software delivery, using a realistic BusinessCorp/Vervium CloudAI scenario to connect concepts to practical decisions and workflows. Learners explore deployment options, infrastructure as code, microservices, Kubernetes, CI, CD, GitOps, observability, SRE, data durability, networking, and security practices. Along the way, they practice choosing the right deployment and orchestration approaches, creating safer pipelines, troubleshooting outages, protecting data and secrets, and applying safety principles to improve delivery without increasing risk.
 
-# Learning objectives
+## Learning objectives
 - Explain the core principles and practices that underpin successful DevOps organizations.
 - Choose the right deployment, infrastructure, and orchestration approaches for modern cloud applications.
 - Build and manage infrastructure using Infrastructure as Code and automation tools.
@@ -103,7 +103,7 @@ This course consists of a series of labs that build on each other.
   `devops-foundations` and automatically switch you to its Kubernetes context, whcih is called `k3d-devops-foundations`.
 
 <!-- TODO: fill in these URLs -->
-# Instructor
+## Instructor
 Yevgeniy (Jim) Brikman - Engineering and Computer Science Expert | Co-founder of Gruntwork | Author
 
 </p><p> Jim has 20+ years of experience as a software engineer, building infrastructure and products with LinkedIn, TripAdvisor, Cisco Systems, and Thomson Financial. He is the co-founder of Gruntwork, a company that that offers products and services for setting up world-class DevOps foundations. He's also the author of three books published by O'Reilly Media: <i>Fundamentals of DevOps and Software Delivery</i>, <i>Terraform: Up & Running</i>, and <i>Hello, Startup</i>.
